@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AftoRoboric.MainPage">
+             x:Class="AftoRoboric.MainPage"
+             Shell.NavBarIsVisible="false">
 
     <Grid>
     <Image Source="corre.jpg"
@@ -9,7 +10,7 @@
             Aspect="AspectFill"/>
 
     <Label Text="Run Alien"
-            TextColor="Black"
+            TextColor="White"
             Margin="20"
             FontSize="60"
             HorizontalOptions="Center"
@@ -18,6 +19,35 @@
 
     <VerticalStackLayout VerticalOptions="End"
                          Spacing="10"
-                         Margin="15, 0, 15, 40"/>              
+                         Margin="15, 0, 15, 40"/>       
+
+      <Button Text="Iniciar"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#2b7874"
+              TextColor="White"
+              VerticalOptions="End"
+              Margin="20, 20, 20, 140"
+              FontSize="18"/>
+
+       <Button Text="Prévia da Historia"
+               BorderWidth="1"
+               HeightRequest="50"
+               CornerRadius="25"
+               BackgroundColor="#2b7874"
+               TextColor="White"
+               VerticalOptions="End"
+               Margin="20, 20, 20, 70"
+               FontSize="16"/> 
+
+       <Button Text="Sobre"
+               BorderWidth="1"
+               HeightRequest="50"
+               CornerRadius="25"
+               BackgroundColor="#2b7874"
+               VerticalOptions="End"
+               Margin="20, 20, 20, 0"
+               TextColor="White"
+               FontSize="16"/>                             
     </Grid>
 </ContentPage>
