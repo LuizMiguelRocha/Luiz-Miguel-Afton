@@ -27,7 +27,7 @@
               BackgroundColor="#2b7874"
               TextColor="White"
               VerticalOptions="End"
-              Margin="20, 20, 20, 140"
+              Margin="20, 20, 20, 3"
               FontSize="18"/>
 
        <Button Text="Prévia da Historia"
@@ -37,7 +37,7 @@
                BackgroundColor="#2b7874"
                TextColor="White"
                VerticalOptions="End"
-               Margin="20, 20, 20, 70"
+               Margin="20, 20, 20, 5"
                FontSize="16"/> 
 
        <Button Text="Sobre"
@@ -53,7 +53,7 @@
        </VerticalStackLayout>
 
        <Frame x:Name="frameSettings"
-              InVisible="false"
+              IsVisible="false"
               Margin="10,20"
               BackgroundColor="#152745"
               HorizontalOptions="Fill"
@@ -61,10 +61,10 @@
 
        <Grid>
        <Grid.RowDefinitions>
-         <RowDefinitions Height="120"/>
-         <RowDefinitions Height="*"/>
-         <RowDefinitions Height="*"/>
-         <RowDefinitions Height="60"/>
+         <RowDefinition Height="120"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="60"/>
        </Grid.RowDefinitions>
 
        <Label Text="Um cientista consegue criar (vida) uma especie de simpiose... Chega aos ouvidos do governo eles querem a pose do 👽 para lucrarem com isso e como uma ameaça a qualquer pais.... O cientista se nega a entregar o alien entāo o governo a tira contra o cientista,ele cai morto no chāo com um tiro no peito o alienigina se apossa do corpo do cientista e ele se encaixa dentro do corpo o alienigina mata todos os agentes do governo... Só restaram vestigios.
@@ -75,8 +75,46 @@ Obejetivo do jogo encontrar o laboratorio do cientista matar o alienigina dentro
               FontSize="40"
               HorizontalOptions="Center"
               HorizontalTextAlignment="Center"/>
-        
-                                                                  
+
+        <Button Text="voltar"
+                HeightRequest="50"
+                BackgroundColor="#2b7874"
+                TextColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"/>      
+
+
        </Grid>
-    </Frame> 
+    </Frame>
+
+         <Frame x:Name="frameSobre"
+                IsVisible="false"
+                Margin="10,20"
+                BackgroundColor="#152745"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
+
+         <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+          </Grid.RowDefinitions>
+
+          <Label  Text="Sobre"      
+                  TextColor="White"
+                  Margin="20"
+                  FontSize="40"
+                  HorizontalOptions="Center"
+                  HorizontalTextAlignment="Center"/>
+
+           <Label Text="Esse jogo foi criado por Luana e Luiz Miguel, quem nos ensinou a fazer esse belizimo jogo é o nosso professor Thiago. E quem não jogar direito vai conhecer meus dois amigos a su e o ra."
+                  TextColor="White"
+                  HorizontalOptions="Center"
+                  HorizontalTextAlignment="Center"
+                  FontSize="20"/>
+          </Grid>               
+
+         </Frame>       
+    </Grid>
 </ContentPage>
