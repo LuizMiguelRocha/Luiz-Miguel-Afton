@@ -19,7 +19,7 @@
 
     <VerticalStackLayout VerticalOptions="End"
                          Spacing="10"
-                         Margin="15, 0, 15, 40"/>       
+                         Margin="15, 0, 15, 40">       
 
       <Button Text="Iniciar"
               HeightRequest="50"
@@ -48,6 +48,35 @@
                VerticalOptions="End"
                Margin="20, 20, 20, 0"
                TextColor="White"
-               FontSize="16"/>                             
-    </Grid>
+               FontSize="16"/>
+
+       </VerticalStackLayout>
+
+       <Frame x:Name="frameSettings"
+              InVisible="false"
+              Margin="10,20"
+              BackgroundColor="#152745"
+              HorizontalOptions="Fill"
+              VerticalOptions="Fill">
+
+       <Grid>
+       <Grid.RowDefinitions>
+         <RowDefinitions Height="120"/>
+         <RowDefinitions Height="*"/>
+         <RowDefinitions Height="*"/>
+         <RowDefinitions Height="60"/>
+       </Grid.RowDefinitions>
+
+       <Label Text="Um cientista consegue criar (vida) uma especie de simpiose... Chega aos ouvidos do governo eles querem a pose do 👽 para lucrarem com isso e como uma ameaça a qualquer pais.... O cientista se nega a entregar o alien entāo o governo a tira contra o cientista,ele cai morto no chāo com um tiro no peito o alienigina se apossa do corpo do cientista e ele se encaixa dentro do corpo o alienigina mata todos os agentes do governo... Só restaram vestigios.
+O jogo começa o alienigina começa a matar pessoas para mais alieniginas se aposarem do corpo dos humanos o obejetivo dos alieniginas era povoar a terra .
+Obejetivo do jogo encontrar o laboratorio do cientista matar o alienigina dentro das pessoas e passar pelos misterios com cautela e sabedoria dependendo da escolha dos jogadores podera afetar a vida e perda de itens ja encontrados e até mesmo um game over…"
+              TextColor="White"
+              Margin="20"
+              FontSize="40"
+              HorizontalOptions="Center"
+              HorizontalTextAlignment="Center"/>
+        
+                                                                  
+       </Grid>
+    </Frame> 
 </ContentPage>
