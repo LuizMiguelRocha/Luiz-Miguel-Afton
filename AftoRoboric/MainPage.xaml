@@ -31,6 +31,7 @@
               FontSize="18"/>
 
        <Button Text="Prévia da Historia"
+               Clicked="BotaoPrevia"
                BorderWidth="1"
                HeightRequest="50"
                CornerRadius="25"
@@ -52,7 +53,7 @@
 
        </VerticalStackLayout>
 
-       <Frame x:Name="frameSettings"
+       <Frame x:Name="framePrevia"
               IsVisible="false"
               Margin="10,20"
               BackgroundColor="#152745"
@@ -71,16 +72,18 @@
 O jogo começa o alienigina começa a matar pessoas para mais alieniginas se aposarem do corpo dos humanos o obejetivo dos alieniginas era povoar a terra .
 Obejetivo do jogo encontrar o laboratorio do cientista matar o alienigina dentro das pessoas e passar pelos misterios com cautela e sabedoria dependendo da escolha dos jogadores podera afetar a vida e perda de itens ja encontrados e até mesmo um game over…"
               TextColor="White"
-              Margin="20"
-              FontSize="40"
+              CharacterSpacing="1"
+              LineHeight="1,5"
+              FontSize="20"
               HorizontalOptions="Center"
               HorizontalTextAlignment="Center"/>
 
         <Button Text="voltar"
+                Clicked="BotaoVoltarPrevia"
                 HeightRequest="50"
                 BackgroundColor="#2b7874"
                 TextColor="White"
-                Margin="0,0,0,10"
+                Margin="20,20,20,-1000"
                 FontSize="18"/>      
 
 
@@ -113,6 +116,14 @@ Obejetivo do jogo encontrar o laboratorio do cientista matar o alienigina dentro
                   HorizontalOptions="Center"
                   HorizontalTextAlignment="Center"
                   FontSize="20"/>
+
+            <Button Text="voltar"
+                    HeightRequest="50"
+                    BackgroundColor="#2b7874"
+                    TextColor="White"
+                    Margin="0,0,0,10"
+                    FontSize="18"/>
+
           </Grid>               
 
          </Frame>       

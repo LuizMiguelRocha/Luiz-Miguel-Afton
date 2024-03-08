@@ -8,5 +8,15 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private void BotaoPrevia(object sender, EventArgs args)
+	{
+		framePrevia.IsVisible = true;
+	}
+
+	private void BotaoVoltarPrevia(object sender, EventArgs args)
+	{
+		framePrevia.IsVisible = false;
+	}
 }
 
