@@ -42,6 +42,7 @@
                FontSize="16"/> 
 
        <Button Text="Sobre"
+               Clicked="BotaoSobre"
                BorderWidth="1"
                HeightRequest="50"
                CornerRadius="25"
@@ -64,27 +65,32 @@
        <Grid.RowDefinitions>
          <RowDefinition Height="120"/>
          <RowDefinition Height="*"/>
-         <RowDefinition Height="*"/>
          <RowDefinition Height="60"/>
        </Grid.RowDefinitions>
 
-       <Label Text="Um cientista consegue criar (vida) uma especie de simpiose... Chega aos ouvidos do governo eles querem a pose do 👽 para lucrarem com isso e como uma ameaça a qualquer pais.... O cientista se nega a entregar o alien entāo o governo a tira contra o cientista,ele cai morto no chāo com um tiro no peito o alienigina se apossa do corpo do cientista e ele se encaixa dentro do corpo o alienigina mata todos os agentes do governo... Só restaram vestigios.
-O jogo começa o alienigina começa a matar pessoas para mais alieniginas se aposarem do corpo dos humanos o obejetivo dos alieniginas era povoar a terra .
+        <Label  Text="Previa da Historia"      
+                  TextColor="White"
+                  FontSize="40"
+                  HorizontalOptions="Center"
+                  HorizontalTextAlignment="Center"
+                  Grid.Row="0"/>
+
+       <Label Text="Um cientista consegue criar (vida) uma especie de simpiose... Chega aos ouvidos do governo eles querem a pose do para lucrarem com isso e como uma ameaça a qualquer pais....
+O cientista se nega a entregar o alien entāo o governo a tira contra o cientista,ele cai morto no chāo com um tiro no peito o alienigina se apossa do corpo do cientista e ele se encaixa dentro do corpo o alienigina mata todos os agentes do governo...
+Só restaram vestigios. O jogo começa o alienigina começa a matar pessoas para mais alieniginas se aposarem do corpo dos humanos o obejetivo dos alieniginas era povoar a terra.
 Obejetivo do jogo encontrar o laboratorio do cientista matar o alienigina dentro das pessoas e passar pelos misterios com cautela e sabedoria dependendo da escolha dos jogadores podera afetar a vida e perda de itens ja encontrados e até mesmo um game over…"
               TextColor="White"
-              CharacterSpacing="1"
-              LineHeight="1,5"
-              FontSize="20"
               HorizontalOptions="Center"
-              HorizontalTextAlignment="Center"/>
+              HorizontalTextAlignment="Center"
+              Grid.Row="1"/>
 
         <Button Text="voltar"
                 Clicked="BotaoVoltarPrevia"
                 HeightRequest="50"
                 BackgroundColor="#2b7874"
                 TextColor="White"
-                Margin="20,20,20,-1000"
-                FontSize="18"/>      
+                FontSize="18"
+                Grid.Row="2"/>      
 
 
        </Grid>
@@ -109,20 +115,23 @@ Obejetivo do jogo encontrar o laboratorio do cientista matar o alienigina dentro
                   Margin="20"
                   FontSize="40"
                   HorizontalOptions="Center"
-                  HorizontalTextAlignment="Center"/>
+                  HorizontalTextAlignment="Center"
+                  Grid.Row="0"/>
 
-           <Label Text="Esse jogo foi criado por Luana e Luiz Miguel, quem nos ensinou a fazer esse belizimo jogo é o nosso professor Thiago. E quem não jogar direito vai conhecer meus dois amigos a su e o ra."
+           <Label Text="Esse jogo foi criado por Luana e Luiz Miguel, quem nos ensinou a fazer esse belizimo jogo é o nosso professor Thiago. E quem não jogar direito vai conhecer meus dois amigos o 'Do' e o 'lor'."
                   TextColor="White"
                   HorizontalOptions="Center"
                   HorizontalTextAlignment="Center"
-                  FontSize="20"/>
+                  FontSize="20"
+                  Grid.Row="1"/>
 
             <Button Text="voltar"
+                    Clicked="BoataoVoltarSobre"
                     HeightRequest="50"
                     BackgroundColor="#2b7874"
                     TextColor="White"
-                    Margin="0,0,0,10"
-                    FontSize="18"/>
+                    FontSize="18"
+                    Grid.Row="2"/>
 
           </Grid>               
 
