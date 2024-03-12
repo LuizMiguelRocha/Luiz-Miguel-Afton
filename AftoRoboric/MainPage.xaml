@@ -22,6 +22,7 @@
                          Margin="15, 0, 15, 40">       
 
       <Button Text="Iniciar"
+              Clicked="BotaoIniciar"
               HeightRequest="50"
               CornerRadius="25"
               BackgroundColor="#2b7874"

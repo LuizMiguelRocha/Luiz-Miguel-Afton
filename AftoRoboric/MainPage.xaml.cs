@@ -9,6 +9,12 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
+
+	private void BotaoIniciar(object sender,EventArgs args)
+	{
+		Application.Current.MainPage = new GamePage();
+	}
+
     private void BotaoSobre(object sender,EventArgs args)
 	{
          frameSobre.IsVisible=true;
