@@ -6,16 +6,92 @@
 
     <Grid>
       <Grid.RowDefinitions>
-        <RowDefinition="*"/>
-        <RowDefinition="60"/>
-        <RowDefinition="60"/>
-        <RowDefinition="60"/>
-        <RowDefinition="60"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="60"/>
+        <RowDefinition Height="60"/>
+        <RowDefinition Height="60"/>
+        <RowDefinition Height="60"/>
       </Grid.RowDefinitions>
 
       <Frame BackgroundColor="#152745"
              Margin="5, 10"
              VerticalOptions="Fill"
-             Grid.Row="0"
+             Grid.Row="0">
+
+        <Label x:Name="labelTexto"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"/>     
+      </Frame>   
+
+      <Button x:Name="BotaoProximo"
+              Clicked="BotaoProximo"
+              Text="Proximo"
+              BackgroundColor="#2b7874"
+              BorderColor="White"
+              Margin="20, 0"
+              TextColor="White"
+              FontSize="16"
+              HorizontalOptions="Fill"
+              Grid.Row="1"/>
+
+      <Button x:Name="Resposta1"
+              BackgroundColor="#2b7874"
+              TextColor="White"
+              HeightRequest="50"
+              CornerRadius="10"
+              Margin="5, 0"
+              FontSize="16"
+              HorizontalOptions="Fill"
+              Grid.Row="2"/>
+
+      <Button x:Name="Resposta2"
+               BackgroundColor="#2b7874"
+              TextColor="White"
+              HeightRequest="50"
+              CornerRadius="10"
+              Margin="5, 0"
+              FontSize="16"
+              HorizontalOptions="Fill"
+              Grid.Row="3"/>
+
+      <Button x:Name="Resposta3"
+               BackgroundColor="#2b7874"
+              TextColor="White"
+              HeightRequest="50"
+              CornerRadius="10"
+              Margin="5, 0"
+              FontSize="16"
+              HorizontalOptions="Fill"
+              Grid.Row="4"/>
+
+      <Frame x:Name="frameGameOver"
+             IsVisible="false"
+             BorderColor="Blue"
+             BackgroundColor="Red"
+             Margin="10, 0, 10, 10"
+             Grid.Row="1"
+             Grid.RowSpan="4">
+
+               <VerticalStackLayout>
+       <Label Text="Gamer Over"
+              TextColor="White"
+              Margin="20"
+              FontSize="40"
+              HorizontalOptions="Center"
+              HorizontalTextAlignment="Center"
+              VerticalOptions="Center"/>
+
+       <Button Text="Começar de novo"
+               BackgroundColor="#2b7874"
+               TextColor="Black"
+               HeightRequest="50"
+                CornerRadius="10"
+                FontSize="16"
+                HorizontalOptions="Fill"/>      
+               </VerticalStackLayout>
+
+      </Frame>                                              
     </Grid>
 </ContentPage>                         

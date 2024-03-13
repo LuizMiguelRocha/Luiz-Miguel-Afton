@@ -9,7 +9,6 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-
 	private void BotaoIniciar(object sender,EventArgs args)
 	{
 		Application.Current.MainPage = new GamePage();
