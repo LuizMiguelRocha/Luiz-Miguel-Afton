@@ -26,7 +26,6 @@
       </Frame>   
 
       <Button x:Name="BotaoProximo"
-              Clicked="BotaoProximo"
               Text="Proximo"
               BackgroundColor="#2b7874"
               BorderColor="White"
