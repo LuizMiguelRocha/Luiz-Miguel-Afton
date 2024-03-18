@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AftoRoboric.GamePage1"
+             Shell.NavBarIsVisible="false">
+
+             <Grid>
+
+             <Grid.RowDefinitions>
+             <RowDefinition Height="*"/>
+             <RowDefinition Height="60"/>
+             <RowDefinition Height="60"/>
+             <RowDefinition Height="60"/>
+             </Grid.RowDefinitions>
+
+             <Frame BackgroundColor="#044a36"
+                    Margin="5, 10"
+                    VerticalOptions="Fill"
+                    Grid.Row="0">
+
+               <Label Text="Você vai tomar um café da manhã e você abre ..."
+                      TextColor="White"
+                      HorizontalOptions="Center"
+                      HorizontalTextAlignment="Center"
+                      VerticalOptions="Center"
+                      FontSize="20"/>
+              </Frame>
+
+              <Button Text="a geladeira"
+                      BackgroundColor="#2f7863"
+                      TextColor="White"
+                      Grid.Row="1"/>                
+             </Grid>
+</ContentPage>             
