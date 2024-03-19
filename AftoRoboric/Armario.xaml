@@ -1,42 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AftoRoboric.GamePage1"
+             x:Class="AftoRoboric.Armario"
              Shell.NavBarIsVisible="false">
 
-             <Grid>
+               <Grid>
 
              <Grid.RowDefinitions>
              <RowDefinition Height="*"/>
              <RowDefinition Height="60"/>
-             <RowDefinition Height="60"/>
              </Grid.RowDefinitions>
 
-             <Frame BackgroundColor="#044a36"
+              <Frame BackgroundColor="#044a36"
                     Margin="5, 10"
                     VerticalOptions="Fill"
                     Grid.Row="0">
 
-               <Label Text="Você vai tomar um café da manhã e você abre ..."
+               <Label Text="Você abre o armario e não tinha nada de bom para comer então você vai até a geladeira"
                       TextColor="White"
                       HorizontalOptions="Center"
                       HorizontalTextAlignment="Center"
                       VerticalOptions="Center"
                       FontSize="20"/>
-              </Frame>
+               </Frame>
 
-              <Button Text="a geladeira"
-                      BackgroundColor="#2f7863"
-                      Clicked="BotaoGeladeira"
-                      TextColor="White"
-                      Margin="0,0,0,8"
-                      Grid.Row="1"/>
-
-               <Button Text="o armario"
-                       Clicked="BotaoArmario"
+               <Button Text="Ir até a geladeira"
+                       Clicked="BotaoA"
                        BackgroundColor="#2f7863"
-                       TextColor="White"
-                       Margin="0,8,0,0"
-                       Grid.Row="2"/>                           
-             </Grid>
+                      TextColor="White"
+                       Grid.Row="1"/>       
+                </Grid>
+
 </ContentPage>             

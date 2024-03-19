@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AftoRoboric.GamePage2"
+             Shell.NavBarIsVisible="false">
+
+            <Grid>
+             <Grid.RowDefinitions>
+             <RowDefinition Height="*"/>
+             <RowDefinition Height="60"/>
+             </Grid.RowDefinitions>
+
+              <Frame BackgroundColor="#044a36"
+                    Margin="5, 10"
+                    VerticalOptions="Fill"
+                    Grid.Row="0">
+
+                <Label Text="Você abre ageladera e la tinha um pedaço de bolo de uma festa que você foi e que você levou para sua casa"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center"
+                       FontSize="20"/>
+               </Frame>
+
+               <Button  Text="Comer o bolo"
+                        BackgroundColor="#2f7863"
+                        TextColor="White"
+                        Grid.Row="1"/>                                       
+            </Grid> 
+</ContentPage>             
