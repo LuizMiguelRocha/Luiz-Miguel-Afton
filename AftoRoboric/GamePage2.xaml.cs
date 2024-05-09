@@ -8,4 +8,9 @@ public partial class GamePage2 : ContentPage
     {
         InitializeComponent();     
     }
+
+       	 void Comer(object sender,EventArgs args)
+	{
+		Application.Current.MainPage = new GamePage3();
+	}
 }    
